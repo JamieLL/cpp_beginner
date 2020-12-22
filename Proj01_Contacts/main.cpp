@@ -8,7 +8,7 @@ void showMenu() {
 	cout << "***** 2. show contacts  *****" << endl;
 	cout << "***** 3. delete person  *****" << endl;
 	cout << "***** 4. find person    *****" << endl;
-	cout << "***** 5. mofify person  *****" << endl;
+	cout << "***** 5. modify person  *****" << endl;
 	cout << "***** 6. reset contacts *****" << endl;
 	cout << "***** 0. exit           *****" << endl;
 	cout << "*****************************" << endl;
