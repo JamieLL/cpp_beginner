@@ -22,13 +22,15 @@ structure (head file, function defined in other files) used in projects.
 
 ### Proj01_Contacts
 A simple project using the basic knowledge learned previously.
-1. add a person
-2. show contacts
-3. delete person
-4. find person
-5. modify person
-6. reset contacts
-0. exit
+
+通讯录管理系统功能如下：
+1. add a person：添加新人（姓名，性别，年龄，电话，住址），最多纪录1000人
+2. show contacts：显示通讯录中所有联系人信息
+3. delete person：按照姓名进行删除指定联系人
+4. find person：按照姓名输出联系人信息
+5. modify person：按照姓名更改联系人信息
+6. reset contacts：清空通讯录
+0. exit：退出程序
 
 ### CoreCpp
 More core knowledge in C++.
