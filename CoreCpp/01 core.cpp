@@ -12,7 +12,7 @@ int& aka() {
 	return a;
 }
 
-int main() {
+int main1() {
 	// 1. 内存分区
 	// 堆区：用new开辟内存
 	int* p = new int(10);
