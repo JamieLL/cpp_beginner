@@ -1,7 +1,10 @@
 #include<iostream>
 using namespace std;
 
+<<<<<<< HEAD
 //构造函数和析构函数
+=======
+>>>>>>> 2ef7c2322b997a5debd960d68cd97cd91ede3c7c
 class Person03 {
 public:
 	//无参构造函数
@@ -35,7 +38,11 @@ public:
 	int* m_age;
 };
 
+<<<<<<< HEAD
 //初始化列表，浅拷贝
+=======
+
+>>>>>>> 2ef7c2322b997a5debd960d68cd97cd91ede3c7c
 class Student {
 public:
 	//初始化列表初始化属性
@@ -61,6 +68,7 @@ void test01() {
 	Student s1(10, 20);
 }
 
+<<<<<<< HEAD
 //静态成员
 class Member {
 public:
@@ -113,6 +121,10 @@ int main3() {
 	test01();
 	test02();
 	test03();
+=======
+int main() {
+	test01();
+>>>>>>> 2ef7c2322b997a5debd960d68cd97cd91ede3c7c
 
 	system("pause");
 	return 0;
