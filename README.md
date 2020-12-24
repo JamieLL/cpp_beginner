@@ -1,4 +1,4 @@
-# cpp_starter
+# cpp_beginner
 
 Started to learn cpp, and noted my progress here. 
 Learning Resource: Bilibili link: https://www.bilibili.com/video/BV1et411b73Z?p=1
