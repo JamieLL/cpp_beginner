@@ -1,4 +1,5 @@
-> 此为学习笔记，参考的教程链接为[https://www.bilibili.com/video/BV1et411b73Z?p=84](https://www.bilibili.com/video/BV1et411b73Z?p=84)
+> 此为学习笔记，参考的教程链接：[https://www.bilibili.com/video/BV1et411b73Z?p=84](https://www.bilibili.com/video/BV1et411b73Z?p=84)
+> 代码笔记链接：[https://github.com/JamieLL/cpp_beginner](https://github.com/JamieLL/cpp_beginner)
 ## 1. 内存分区
 - 代码区
 	- 共享、只读
@@ -180,3 +181,31 @@ int main() {
 		- `vitual ~类名() = 0;`, `类名::~类名(){}`
 		- 记得要具体实现，且在类外实现
 ## 5 文件
+- `#include <fstream>`
+	- ofstream：写
+	- ifstream：读
+	- fstream：读写
+- 文本文件：以文本的ASCII码形式存储
+- 二进制文件：以文本的二进制形式存储
+### 5.1 文本文件
+- 写文件
+	- 头文件：`#include <fstream>`
+	- 创建流对象：`ofstream ofs;`
+	- 打开文件：`ofs.open("路径",打开方式);`
+		- `ios::in`读文件
+		- `ios::out`写文件
+		- `ios::app`追加方式写文件
+		- `ios::trunc`若文件存在先删除，再创建
+		- `ios::binary`二进制方式
+		- `ios::ate`初始位置在文件尾
+		- 可配合使用`|`，如`ios::binary | ios::out`
+	- 写数据：`ofs << "写入的数据";`
+	- 关闭文件：`ofs.close();`
+- 读文件步骤类似，有4种读取方式（见代码）
+### 5.2 二进制文件
+- `ios::binary`
+- 写文件
+	- 函数原型`ostream& write(const char* buffer, int len);`
+	- 字符指针buffer指向内存中一段存储空间，len是读写的字节数
+- 读文件
+	- 函数原型`istream& read(char *buffer, int len);`
